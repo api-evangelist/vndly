@@ -1,11 +1,31 @@
 aid: vndly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vndly.png
 name: VNDLY
-description: VNDLY is a company surfaced as a portfolio company of battery-ventures, insight-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  VNDLY is a cloud-based vendor management system (VMS) for managing contingent
+  workforce, external labor, statements of work (SOW), and services procurement.
+  Founded in 2017 and headquartered in Mason, Ohio, VNDLY was acquired by Workday
+  in 2021 and is now offered as Workday VNDLY, pairing with Workday Human Capital
+  Management (HCM) for total workforce optimization. The company no longer operates
+  an independent public developer portal or API surface; integration is delivered
+  through the Workday platform. This profile originated as a portfolio-company lead
+  (Battery Ventures, Insight Partners) surfaced into the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/vndly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: acquired
+x-acquired-by: workday
 x-backed-by:
 - battery-ventures
 - insight-partners
@@ -13,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Vendor Management
+- VMS
+- Contingent Workforce
+- Human Capital Management
+- Procurement
+- Workday
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vndly-domain-security.yml
 - type: Website
   url: https://vndly.com/
+- type: Product
+  url: https://www.workday.com/en-us/products/vndly-vms/overview.html
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
