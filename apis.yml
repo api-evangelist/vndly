@@ -48,7 +48,7 @@ modified: '2026-07-21'
 tags:
 - Company
 - Vendor Management
-- VMs
+- VMS
 - Contingent Workforce
 - HCM
 - Procurement
@@ -68,6 +68,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/workday/
+  name: Workday
+  x-relationship: acquired
+  x-evidence: "Founded in 2017 and headquartered in Mason, Ohio, VNDLY was acquired by Workday in 2021 and is now offered as Workday VNDLY, pairing with Workday Human Capital Management (HCM) for total workforce optimization."
 - type: DomainSecurity
   url: security/vndly-domain-security.yml
 - type: Website
